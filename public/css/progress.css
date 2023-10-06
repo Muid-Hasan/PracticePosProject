@@ -1,0 +1,55 @@
+/* Define the progress container */
+.progress-container {
+    width: 100%   important;
+    background-color: #ccc   important;
+    position: relative   important; /* Add position relative for the overlay */
+}
+
+/* Define the progress bar itself */
+.progress-bar {
+    width: 0   important;
+    height: 20px   important;
+    background-color: #3498db;
+    text-align: center   important;
+    line-height: 20px   important;
+    color: #fff   important;
+}
+
+/* Style the text inside the progress bar (optional) */
+.progress-text {
+    color: #333   important;
+}
+
+/* Animation for the progress bar */
+@keyframes progress {
+    0% {
+        width: 0   important;
+    }
+}
+
+/* Apply the animation to the progress bar */
+.progress-bar.active {
+    animation: progress 3s linear forwards;
+}
+
+/* Style for the overlay */
+.progress-overlay {
+    position: absolute   important;
+    top: 0   important;
+    left: 0   important;
+    width: 100%   important;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7)   important; /* You can adjust the color and opacity as needed */
+    display: flex   important;
+    align-items: center   important;
+    justify-content: center   important;
+    z-index: 1   important; /* Ensure the overlay appears above the progress bar */
+}
+
+
+
+/*
+Corresponding Html:: 
+   important
+
+*/
